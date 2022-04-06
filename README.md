@@ -1,6 +1,6 @@
 # deneme1
 
-A new Flutter project.
+Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü 3301456 kodlu Mobil Programlama dersi ara sınavıdır.
 
 ## Getting Started
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "877359632974",
+    "project_id": "kitap-47e02",
+    "storage_bucket": "kitap-47e02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877359632974:android:972e814144f485e2c2a91f",
+        "android_client_info": {
+          "package_name": "com.example.deneme1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877359632974-qs1dhqroe9u7v1uptlqd3hr36hclk5cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf4qL6YfF53PPoSoRc3mIebaHTd-dDsuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877359632974-qs1dhqroe9u7v1uptlqd3hr36hclk5cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

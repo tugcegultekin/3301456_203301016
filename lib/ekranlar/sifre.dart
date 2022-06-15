@@ -1,16 +1,13 @@
-
+import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'auth.dart';
-import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 
-
-class UyeOlPage extends StatefulWidget {
+class SifreYenilemePage extends StatefulWidget {
   @override
-  _UyeOlPageState createState() => _UyeOlPageState();
+  _SifreYenilemeState createState() => _SifreYenilemeState();
 }
 
-class _UyeOlPageState extends State<UyeOlPage> {
+class _SifreYenilemeState extends State<SifreYenilemePage> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
@@ -114,7 +111,7 @@ class _UyeOlPageState extends State<UyeOlPage> {
                                   Icons.vpn_key,
                                   color: Colors.blueAccent,
                                 ),
-                                hintText: 'Şifre',
+                                hintText: 'Yeni Şifre',
                                 prefixText: ' ',
                                 hintStyle: TextStyle(color: Colors.blueAccent),
                                 focusColor: Colors.blueAccent,
@@ -142,7 +139,7 @@ class _UyeOlPageState extends State<UyeOlPage> {
                                   Icons.vpn_key,
                                   color: Colors.blueAccent,
                                 ),
-                                hintText: 'Şifre Tekrar',
+                                hintText: 'Yeni Şifre Tekrar',
                                 prefixText: ' ',
                                 hintStyle: TextStyle(color: Colors.blueAccent),
                                 focusColor: Colors.blueAccent,
@@ -203,7 +200,7 @@ class _UyeOlPageState extends State<UyeOlPage> {
               padding:
               EdgeInsets.only(top: size.height * .06, left: size.width * .02),
               child: Align(
-                alignment: Alignment.topLeft,
+                alignment: Alignment.topCenter,
                 child: Row(
                   children: [
                     IconButton(
@@ -218,7 +215,7 @@ class _UyeOlPageState extends State<UyeOlPage> {
                       width: size.width * 0.3,
                     ),
                     Text(
-                      "Kayıt ol",
+                      "Şifre Yenileme",
                       style: TextStyle(
                           fontSize: 20,
                           color: Colors.orangeAccent.withOpacity(.75),

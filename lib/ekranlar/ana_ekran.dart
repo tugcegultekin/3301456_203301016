@@ -9,31 +9,52 @@ class AnaEkran extends StatefulWidget {
 }
 
 class _AnaEkranState extends State<AnaEkran> {
+  get child => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Kitaplık"),
-      ),
-        backgroundColor: Colors.orangeAccent,
+      backgroundColor: Colors.orangeAccent,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Image(
-              image: AssetImage("assets/images/books.png"),
-              width: 450,
-              height: 250,
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
+              Container(
+                margin: const EdgeInsets.only(left: 10.0),
+                child: const Image(
+                  image: AssetImage("assets/images/books.png"),
+                  width: 350,
+                  height: 250,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              )
+            ]),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Text(
+                    "Okuduğunuz tüm kitapların takibini dijital olarak yapmanızı\nsağlayacak ve ilerlemenizi kaydedecektir."),
+              ],
             ),
-            Text(
-                "  Kitaplık uygulamasının hedefi kitap okuma alışkanlığınızı devam ettirmenizi sağlamak ve size kitap önermektir. Siz kitap okurken sevdiğiniz türlere, okuduğunuz kitaplara göre size kitap önerecek ve önerilen kitaplar hakkında bilgi verecektir. Kitabınızı okurken hangi sayfada kaldığınızı, kaç sayfa okuduğunuzu yazabilecek, kitap hakkında notlarınızı kaydedebileceksiniz. Kitaplığınız her daim yanınızda bulunmuş olacaktır."),
-            MaterialButton(
-              child: Text("Üye Ol/Giriş Yap"),
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LoginPage()));
-              },
-            ),
+            SizedBox(height: 20,),
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              MaterialButton(
+              child: const Text("Üye Ol / Giriş Yap"),
+
+          onPressed: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => LoginPage()));
+          },
+          height: 50,
+          minWidth: 70,
+          color: Colors.red,
+
+                ),
+            ],),
           ],
         ),
       ),

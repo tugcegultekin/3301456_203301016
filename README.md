@@ -1,6 +1,6 @@
 # deneme1
 
-Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü 3301456 kodlu Mobil Programlama dersi ara sınavıdır.
+Selçuk Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü 3301456 kodlu Mobil Programlama dersi final sınavıdır.
 
 ## Getting Started
 

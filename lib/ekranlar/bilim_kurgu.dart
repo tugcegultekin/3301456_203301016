@@ -21,27 +21,27 @@ class BilimKurguPage extends State<BilimKurgu> {
               ElevatedButton(
                 onPressed: () {
                   Random rnd = new Random();
-                  var rnd2 = rnd.nextInt(75);
+                  var rnd2 = rnd.nextInt(9);
 
-                  if (rnd2 > 1 && rnd2 < 5) {
+                  if (rnd2 > 1 && rnd2 <=3) {
                     var alert = const AlertDialog(
                       title: Text("20. Yüzyılda Paris\nJules Verne"),
                     );
                     showDialog(
                         context: context, builder: (BuildContext context) => alert);
-                  } else if (rnd2 > 6 && rnd2 < 10) {
+                  } else if (rnd2 > 3 && rnd2 <=5) {
                     var alert = const AlertDialog(
                       title: Text("Seçilmiş Kişi\nYazar: Lois Lowry"),
                     );
                     showDialog(
                         context: context, builder: (BuildContext context) => alert);
-                  } else if (rnd2 > 11 && rnd2 < 15) {
+                  } else if (rnd2 > 5 && rnd2 <=7) {
                     var alert = const AlertDialog(
                       title: Text("Frankenstein\nYazar: Mary Shelly"),
                     );
                     showDialog(
                         context: context, builder: (BuildContext context) => alert);
-                  } else if (rnd2 > 16 && rnd2 < 20) {
+                  } else if (rnd2 > 7 && rnd2 <=9) {
                     var alert = const AlertDialog(
                       title: Text("Zaman Makinesi\nYazar: H. G. Wells"),
                     );

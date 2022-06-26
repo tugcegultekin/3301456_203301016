@@ -21,27 +21,27 @@ class Psikoloji extends State<Psikolojik> {
               ElevatedButton(
                 onPressed: () {
                   Random rnd = new Random();
-                  var rnd2 = rnd.nextInt(75);
+                  var rnd2 = rnd.nextInt(9);
 
-                  if (rnd2 > 1 && rnd2 < 5) {
+                  if (rnd2 > 1 && rnd2 <=3 ) {
                     var alert = const AlertDialog(
                       title: Text("Büyük Umutlar\nYazar: Charles Dickens"),
                     );
                     showDialog(
                         context: context, builder: (BuildContext context) => alert);
-                  } else if (rnd2 > 6 && rnd2 < 10) {
+                  } else if (rnd2 > 3 && rnd2 <=5 ) {
                     var alert = const AlertDialog(
                       title: Text("Fareler ve İnsanlar\nYazar: John Steinbeck"),
                     );
                     showDialog(
                         context: context, builder: (BuildContext context) => alert);
-                  } else if (rnd2 > 11 && rnd2 < 15) {
+                  } else if (rnd2 > 5 && rnd2 <= 7) {
                     var alert = const AlertDialog(
                       title: Text("Kumarbaz\nYazar: Dostoyevski"),
                     );
                     showDialog(
                         context: context, builder: (BuildContext context) => alert);
-                  } else if (rnd2 > 16 && rnd2 < 20) {
+                  } else if (rnd2 >7 && rnd2 <= 9) {
                     var alert = const AlertDialog(
                       title: Text("Sol Ayağım\nYazar: Christy Brown"),
                     );

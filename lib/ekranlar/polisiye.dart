@@ -26,7 +26,7 @@ class PolisiyePage extends State<Polisiye> {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget> [
-          RaisedButton(
+          ElevatedButton(
             onPressed: () {
       _updateState();
           AnimatedContainer(
@@ -42,39 +42,39 @@ class PolisiyePage extends State<Polisiye> {
             ),
           );
               Random rnd = new Random();
-              var rnd2 = rnd.nextInt(75);
+              var rnd2 = rnd.nextInt(13);
 
-              if (rnd2 > 1 && rnd2 < 5) {
+              if (rnd2 > 1 && rnd2 <= 3) {
                 var alert = const AlertDialog(
                   title: Text("Büyük Uyku\nYazar: Raymond Chandler"),
                 );
                 showDialog(
                     context: context, builder: (BuildContext context) => alert);
-              } else if (rnd2 > 6 && rnd2 < 10) {
+              } else if (rnd2 > 3 && rnd2 <= 5) {
                 var alert = const AlertDialog(
                   title: Text("Ölüm Adası\nYazar: Agatha Christie"),
                 );
                 showDialog(
                     context: context, builder: (BuildContext context) => alert);
-              } else if (rnd2 > 11 && rnd2 < 15) {
+              } else if (rnd2 > 5 && rnd2 <= 7) {
                 var alert = const AlertDialog(
                   title: Text("On Kişiydiler\nYazar: Agatha Christie"),
                 );
                 showDialog(
                     context: context, builder: (BuildContext context) => alert);
-              } else if (rnd2 > 16 && rnd2 < 20) {
+              } else if (rnd2 > 7 && rnd2 <= 9) {
                 var alert = const AlertDialog(
                   title: Text("Melekler ve Şeytanlar\nYazar: Dan Brown"),
                 );
                 showDialog(
                     context: context, builder: (BuildContext context) => alert);
-              } else if (rnd2 > 21 && rnd2 < 25) {
+              } else if (rnd2 > 9 && rnd2 <= 11) {
                 var alert = const AlertDialog(
                   title: Text("Gözlerini Sımsıkı Kapat\nYazar: John Verdon"),
                 );
                 showDialog(
                     context: context, builder: (BuildContext context) => alert);
-              } else if (rnd2 > 26 && rnd2 < 30) {
+              } else if (rnd2 > 11 && rnd2 <= 13) {
                 var alert = const AlertDialog(
                   title: Text("Cesetler Merdiveni\nYazar: Agatha Christie"),
                 );
